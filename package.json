@@ -28,7 +28,8 @@
     "mocha": "latest",
     "sinon": "latest",
     "chai":  "latest",
-    "sinon-chai": "latest"
+    "sinon-chai": "latest",
+    "coffee-script": "1.9.3"
   },
   "engines": {
     "node": "0.12.x"
