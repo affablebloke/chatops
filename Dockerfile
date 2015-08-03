@@ -5,7 +5,7 @@ RUN groupadd -r hubot && useradd -r -g hubot hubot
 RUN mkdir -p /home/hubot && chown hubot:hubot /home/hubot \
       && usermod -d /home/hubot hubot
 RUN mkdir /hubot && cd /hubot && chown hubot:hubot /hubot
-COPY ./hubot /hubot
+COPY . /hubot
 WORKDIR /hubot
 RUN npm install
 CMD ["bin/hubot", "-a", "hipchat"]

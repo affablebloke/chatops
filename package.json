@@ -1,8 +1,7 @@
 {
   "name": "chatops",
   "version": "0.0.1",
-  "private": true,
-  "author": "Daniel Johnston <djohnston@clearcareonline.com>",
+  "author": "Daniel Johnston <affablebloke@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
     "yo": "latest",
@@ -21,6 +20,15 @@
     "hubot-scripts": "^2.16.1",
     "hubot-shipit": "^0.2.0",
     "hubot-firebase-brain": "1.0.1"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "sinon": "latest",
+    "chai":  "latest",
+    "sinon-chai": "latest"
   },
   "engines": {
     "node": "0.12.x"
