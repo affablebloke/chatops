@@ -8,7 +8,7 @@ upon have been set.
 
 You can start hubot by running:
 
-    % docker run -it --rm  --env-file [.env](#configuration) -v ${repo-dir}/scripts:/hubot/scripts ${image-id/tag} /hubot/bin/hubot
+    % docker run -it --rm  --env-file ${env-file} -v ${repo-dir}/scripts:/hubot/scripts ${image-id/tag} /hubot/bin/hubot
 
 You'll see some start up output and a prompt:
 
@@ -23,12 +23,13 @@ Then you can interact with hubot by typing `hubot help`.
     ...
 
 ### Configuration
-#### .env file
+
+```bash
 AWS_ACCESS_KEY_ID=${YOUR_AWS_ACCESS_KEY_ID}
 AWS_SECRET_ACCESS_KEY=${YOUR_AWS_SECRET_ACCESS_KEY}
 FIREBASE_URL=${YOUR_FIREBASE_URL}
 FIREBASE_SECRET=${YOUR_FIREBASE_SECRET}
+```
 
 ## Deployment
-
 It's using Docker.
