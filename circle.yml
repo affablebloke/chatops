@@ -1,16 +1,8 @@
 machine:
   node:
     version: 0.12.0
-  pre:
-    - |
-      test $(docker --version | awk '{ print $3 }' | head -c3) != "1.7" && {
-        sudo curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.7.1-circleci';
-        sudo chmod 0755 /usr/bin/docker;
-      }
-    - sudo service docker start
-# Restore this once docker >1.6.2 is available.
-#  services:
-#    - docker
+  services:
+   - docker
 
 deployment:
   hub:
